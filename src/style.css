@@ -10,13 +10,14 @@ html {
   
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: aqua;
   }
   
   nav {
     width: 100%;
     background-color: rgb(13, 14, 13);
-    padding-left: 30px;
-    padding-right: 10px;
+    padding-left: 10vw;
+    padding-right: 10vw;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -43,4 +44,42 @@ html {
   
   .nav-item:hover a {
     color: rgb(1, 14, 43);
+  }
+  .restaurantheader{
+    display: flex;
+    font-size: 2rem;
+    padding: 20px;
+  }
+  .homesection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    padding:20px;
+  }
+
+
+
+  .rest-img{
+    /* display: grid; */
+    height: 250px;
+    width:auto;
+  }
+
+  @media screen and (max-device-width: 900px) {
+    .homesection{
+      /* padding: 30vh 5vw; */
+    }
+    .nav-item a {
+      font-size: 1.3rem;
+      padding: 10px 10px;
+    }
+
+
+  .rest-img{
+    /* display: grid; */
+    height: 150px;
+    width:auto;
+  }
   }

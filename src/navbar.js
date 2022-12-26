@@ -1,4 +1,10 @@
 import { home } from "./home";
+import { menu } from "./menu";
+
+let homeClicked = true;
+let contactClicked = false;
+let menuClicked = false;
+    
 
 function navBar() {
   const navBar = document.createElement("nav");
@@ -12,6 +18,8 @@ function navBar() {
 
   const navText = ["Home", "Menu", "Contact"];
 
+
+    
   for (var i = 0; i < navText.length; i += 1) {
     const navItems = document.createElement("li");
     navItems.setAttribute("class", "nav-item");
@@ -23,17 +31,30 @@ function navBar() {
     navA.innerHTML = navText[i];
     navItems.appendChild(navA);
 
+   
+
+
     navA.addEventListener("click", function handleClick(event) {
       // console.log(navA.id);
-      if (navA.id == "Home") {
-        // console.log("home Clikced");
+      if (navA.id == "Home" && homeClicked == false) {
         home();
-      } else if (navA.id == "Menu") {
+        homeClicked = true;
+        menuClicked = false;
+        contactClicked = false;
+      }  
+      if (navA.id == "Menu" && menuClicked == false) {
         console.log("menu  Clikced");
-      } else if (navA.id == "Contact") {
-        console.log("contact Clikced");
+        menuClicked = true;
+        
+        menu();
+        homeClicked = false;
+        
       }
-    });
+       if (navA.id == "Contact" && contactClicked == false) {
+        console.log("contact Clikced");
+        contactClicked = true;
+      }
+    }), {once: true};
   }
 }
 

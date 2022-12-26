@@ -12,16 +12,14 @@ import { home } from "./home";
     content.id = "content"
 
     document.body.appendChild(content)
-   
-    
   
-
 
 })();
 
 
 
-navBar()
+
+
+navBar();
 
 home();
-
