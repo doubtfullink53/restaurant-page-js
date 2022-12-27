@@ -18,26 +18,14 @@ export function home(){
 
     const restaurantHeader = document.createElement("div")
     restaurantHeader.setAttribute("class", "restaurantheader")
-    restaurantHeader.textContent = "Ash"
+    restaurantHeader.innerHTML = "<h1> Ashes </h1>"
     homeSection.appendChild(restaurantHeader)
 
+    const aboutRestaurant = document.createElement("div")
+    aboutRestaurant.setAttribute("class", "aboutrestaurant")
+    aboutRestaurant.textContent = "Lorem ipsum dolor sit amet."
+    restaurantHeader.appendChild(aboutRestaurant)
 
-
-    const myIcon = new Image();
-    myIcon.setAttribute("class", "rest-img")
-    myIcon.src = restaurantimg;
-  
-    homeSection.appendChild(myIcon);
-  
-
-    // const restaurantimg = document.createElement("img")
-    // restaurantimg.src = restaurantimg
-    // restaurantimg.setAttribute("height", "200px")
-
-
-    // homeSection.appendChild(restaurantimg)
-
-
-    // homeSection.textContent = "loremdflkasjdflsdajfl;ksdjaf;ldskajf;lsdajkfkl;"
+    
 
 }

@@ -1,5 +1,6 @@
 import { home } from "./home";
 import { menu } from "./menu";
+import { contact } from "./contact"
 
 let homeClicked = true;
 let contactClicked = false;
@@ -48,10 +49,14 @@ function navBar() {
         
         menu();
         homeClicked = false;
+        contactClicked = false;
         
       }
        if (navA.id == "Contact" && contactClicked == false) {
         console.log("contact Clikced");
+        contact();
+        homeClicked = false; 
+        menuClicked = false;
         contactClicked = true;
       }
     }), {once: true};

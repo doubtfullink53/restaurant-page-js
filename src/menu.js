@@ -1,5 +1,5 @@
 import { navBar } from './navbar'
-import restaurantimg from './restaurantpress.png'
+import restaurantimg from './menu.png'
 
 export function menu(){
    content.innerHTML = ""
@@ -20,13 +20,13 @@ export function menu(){
 
     const restaurantHeader = document.createElement("div")
     restaurantHeader.setAttribute("class", "restaurantheader")
-    restaurantHeader.textContent = "Ash"
+    restaurantHeader.textContent = "Ashes"
     homeSection.appendChild(restaurantHeader)
 
 
 
     const myIcon = new Image();
-    myIcon.setAttribute("class", "rest-img")
+    myIcon.setAttribute("class", "menu-img")
     myIcon.src = restaurantimg;
   
     homeSection.appendChild(myIcon);
