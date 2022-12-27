@@ -35,7 +35,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"home\": () => (/* binding */ home)\n/* harmony export */ });\n/* harmony import */ var _Bordeaux_076_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Bordeaux-076.png */ \"./src/Bordeaux-076.png\");\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n\n\n\nfunction home(){\n    content.innerHTML = \"\";\n    (0,_navbar__WEBPACK_IMPORTED_MODULE_1__.navBar)()\n    const main = document.createElement(\"div\");\n    main.setAttribute(\"class\", \"mainsection\")\n    content.appendChild(main);\n\n    \n    const homeSection = document.createElement(\"div\");\n    homeSection.setAttribute(\"class\", \"homesection\")\n    main.appendChild(homeSection)\n\n\n\n\n    const restaurantHeader = document.createElement(\"div\")\n    restaurantHeader.setAttribute(\"class\", \"restaurantheader\")\n    restaurantHeader.innerHTML = \"<h1> Ashes </h1>\"\n    homeSection.appendChild(restaurantHeader)\n\n    const aboutRestaurant = document.createElement(\"div\")\n    aboutRestaurant.setAttribute(\"class\", \"aboutrestaurant\")\n    aboutRestaurant.textContent = \"Lorem ipsum dolor sit amet.\"\n    restaurantHeader.appendChild(aboutRestaurant)\n\n    \n\n}\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"home\": () => (/* binding */ home)\n/* harmony export */ });\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n\n\n\nfunction home(){\n    content.innerHTML = \"\";\n    (0,_navbar__WEBPACK_IMPORTED_MODULE_0__.navBar)()\n    const main = document.createElement(\"div\");\n    main.setAttribute(\"class\", \"mainsection\")\n    content.appendChild(main);\n\n    \n    const homeSection = document.createElement(\"div\");\n    homeSection.setAttribute(\"class\", \"homesection\")\n    main.appendChild(homeSection)\n\n\n\n\n    const restaurantHeader = document.createElement(\"div\")\n    restaurantHeader.setAttribute(\"class\", \"restaurantheader\")\n    restaurantHeader.innerHTML = \"<h1> Ashes </h1>\"\n    homeSection.appendChild(restaurantHeader)\n\n    const aboutRestaurant = document.createElement(\"div\")\n    aboutRestaurant.setAttribute(\"class\", \"aboutrestaurant\")\n    aboutRestaurant.textContent = \"Lorem ipsum dolor sit amet.\"\n    restaurantHeader.appendChild(aboutRestaurant)\n\n    \n\n}\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _background_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./background.jpg */ \"./src/background.jpg\");\n\n\n\n\n\n\n\n\n\n(function createContentDiv() {\n    const background = document.createElement(\"div\");\n    background.id = \"background-img\";\n    document.body.appendChild(background)\n\n    const content = document.createElement(\"div\");\n    content.id = \"content\";\n\n    background.appendChild(content);\n  \n   \n})();\n\n\n\n\n\n(0,_navbar__WEBPACK_IMPORTED_MODULE_1__.navBar)();\n\n(0,_home__WEBPACK_IMPORTED_MODULE_2__.home)();\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\n\n\n// import backgroundImg  from \"./background.jpg\"\n\n\n\n\n(function createContentDiv() {\n    const background = document.createElement(\"div\");\n    background.id = \"background-img\";\n    document.body.appendChild(background)\n\n    const content = document.createElement(\"div\");\n    content.id = \"content\";\n\n    background.appendChild(content);\n  \n   \n})();\n\n\n\n\n\n(0,_navbar__WEBPACK_IMPORTED_MODULE_1__.navBar)();\n\n(0,_home__WEBPACK_IMPORTED_MODULE_2__.home)();\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -66,26 +66,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"navBar\": () => (/* binding */ navBar)\n/* harmony export */ });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n\n\n\n\nlet homeClicked = true;\nlet contactClicked = false;\nlet menuClicked = false;\n    \n\nfunction navBar() {\n  const navBar = document.createElement(\"nav\");\n  navBar.setAttribute(\"class\", \"navbar\");\n\n  content.appendChild(navBar);\n\n  const navLinks = document.createElement(\"ul\");\n  navLinks.setAttribute(\"class\", \"nav-links\");\n  navBar.appendChild(navLinks);\n\n  const navText = [\"Home\", \"Menu\", \"Contact\"];\n\n\n    \n  for (var i = 0; i < navText.length; i += 1) {\n    const navItems = document.createElement(\"li\");\n    navItems.setAttribute(\"class\", \"nav-item\");\n    navLinks.appendChild(navItems);\n\n    const navA = document.createElement(\"a\");\n    // navA.setAttribute(\"onclick\", \"uClicked()\")\n    navA.id = `${navText[i]}`;\n    navA.innerHTML = navText[i];\n    navItems.appendChild(navA);\n\n   \n\n\n    navA.addEventListener(\"click\", function handleClick(event) {\n      // console.log(navA.id);\n      if (navA.id == \"Home\" && homeClicked == false) {\n        (0,_home__WEBPACK_IMPORTED_MODULE_0__.home)();\n        homeClicked = true;\n        menuClicked = false;\n        contactClicked = false;\n      }  \n      if (navA.id == \"Menu\" && menuClicked == false) {\n        console.log(\"menu  Clikced\");\n        menuClicked = true;\n        \n        (0,_menu__WEBPACK_IMPORTED_MODULE_1__.menu)();\n        homeClicked = false;\n        contactClicked = false;\n        \n      }\n       if (navA.id == \"Contact\" && contactClicked == false) {\n        console.log(\"contact Clikced\");\n        (0,_contact__WEBPACK_IMPORTED_MODULE_2__.contact)();\n        homeClicked = false; \n        menuClicked = false;\n        contactClicked = true;\n      }\n    }), {once: true};\n  }\n}\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/navbar.js?");
-
-/***/ }),
-
-/***/ "./src/Bordeaux-076.png":
-/*!******************************!*\
-  !*** ./src/Bordeaux-076.png ***!
-  \******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"d6e48b46d9eeb949d445.png\";\n\n//# sourceURL=webpack://restaurant-page/./src/Bordeaux-076.png?");
-
-/***/ }),
-
-/***/ "./src/background.jpg":
-/*!****************************!*\
-  !*** ./src/background.jpg ***!
-  \****************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"69546d4e241e88de945a.jpg\";\n\n//# sourceURL=webpack://restaurant-page/./src/background.jpg?");
 
 /***/ }),
 
