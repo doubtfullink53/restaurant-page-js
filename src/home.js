@@ -1,4 +1,4 @@
-import restaurantimg from './Bordeaux-076.png'
+
 import { navBar } from './navbar';
 
 export function home(){

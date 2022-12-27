@@ -2,7 +2,7 @@
 import './style.css';
 import { navBar} from "./navbar";
 import { home } from "./home";
-import backgroundImg  from "./background.jpg"
+// import backgroundImg  from "./background.jpg"
 
 
 
